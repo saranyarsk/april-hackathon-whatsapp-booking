@@ -3,22 +3,47 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WhatsApp Chat</title>
+<title>WhatsApp Booking</title>
 <style>
-  /* Style for the WhatsApp icon */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    text-align: center;
+  }
+
   .whatsapp-icon {
     display: inline-block;
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1196px-WhatsApp.svg.png'); /* Add your WhatsApp icon image URL here */
     background-size: cover;
     cursor: pointer;
+  }
+
+  .message {
+    font-size: 18px;
+    margin-top: 20px;
   }
 </style>
 </head>
 <body>
 
-<!-- WhatsApp icon with link to redirect -->
-<a href="https://wa.me/7904432955?text=Hello%20there,%20I%20have%20a%20question" target="_blank" class="whatsapp-icon"></a>
+<div class="container">
+  <!-- WhatsApp icon with link to redirect -->
+  <a href="https://wa.me/whatsappphonenumber?text=I%20would%20like%20to%20book%20an%20appointment." target="_blank" class="whatsapp-icon"></a>
+  <!-- Replace "whatsappphonenumber" with the actual phone number in international format (e.g., 1234567890) -->
+  <!-- You can modify the text parameter to change the default booking message -->
+  <div class="message">Click the icon to book an appointment</div>
+</div>
+
 </body>
 </html>
