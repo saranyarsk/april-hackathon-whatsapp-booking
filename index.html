@@ -44,6 +44,18 @@
   <!-- You can modify the text parameter to change the default booking message -->
   <div class="message">Click the icon to book an appointment</div>
 </div>
-
+<script>
+    // Example AJAX request to send a message to your server
+    fetch('/webhook', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ from: 'senderPhoneNumber', body: 'messageContent' }) // Replace with actual sender phone number and message content
+    })
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error('Error:', error));
+    </script>
 </body>
 </html>
